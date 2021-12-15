@@ -46,7 +46,9 @@ I am a robot... teach me to "square"
 
 ---
 
-<img src="https://imgs.xkcd.com/comics/python.png">
+<img src="https://imgs.xkcd.com/comics/python.png" height="40%">
+
+[XKCD](https://xkcd.com/353/)
 
 ---
 
