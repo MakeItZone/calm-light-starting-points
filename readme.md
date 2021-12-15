@@ -15,7 +15,7 @@ Motivations for this suggestion:
 
 ## Introductory Slides 
 
-Some thoughts & references are in [slides/static/index.html](slides/static/index.html).
+Some thoughts & references are in [docs](docs/)- which you can see [live](https://makeitzone.github.io/calm-light-starting-points).
 
 It includes links to a Wokwi Pi Pico simulator setup with CircuitPython and a NeoPixel strip.
 
@@ -35,3 +35,8 @@ Uses the Adafruit LED Animation library.
 
 Uses the Adafruit audio libraries. Example audio mp3 file from [this Adafruit example](https://github.com/adafruit/Adafruit_Learning_System_Guides/tree/main/MP3_Playback_RP2040/Pico_Single_File)
 
+### NeoPixel_and_AudioPlayback-PWM
+
+Plays an mp3 files and animates NeoPixels!
+
+[examples/NeoPixel_and_AudioPlayback-PWM](examples/NeoPixel_and_AudioPlayback-PWM)
