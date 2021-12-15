@@ -1,0 +1,6 @@
+{
+    "separator": "^---",
+    "verticalSeparator": "^===",
+    "theme": "black",
+    "highlight-theme": "rainbow"
+}

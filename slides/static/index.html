@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./dist/reset.css" />
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"># Brainstorm
+
+</script></section><section  data-markdown><script type="text/template">
+
+# Planning
+
+- how much planning is good?
+    - *what's the cost of a mistake?*
+- Software vs Hardware?
+    - usually low cost of mistake vs higher (exception: safety!)
+- find a good balance between planning and trying!
+
+</script></section><section ><section data-markdown><script type="text/template">
+
+# Work Together!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1COvnSjLLw4?start=44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</script></section><section data-markdown><script type="text/template">
+
+- unlike rally driving, best to take turns at doing the coding!
+- COMMUNICATE ideas, problems
+- "IMPOSTER SYNDROME is REAL"... and it's ok, and everyone has it
+
+</script></section></section><section  data-markdown><script type="text/template">
+
+# What is a Program?
+
+I am a robot... teach me to "square"
+
+</script></section><section  data-markdown><script type="text/template">
+
+# Key Concepts
+
+- specific actions
+- logic (decision making)
+- loops
+- blocks of code (eg what to repeat in a loop)
+- functions/subroutines
+- Less code is MORE (usually)
+    - less places to make mistakes, so long as you can understand it!
+
+</script></section><section  data-markdown><script type="text/template">
+
+# Python
+
+</script></section><section  data-markdown><script type="text/template">
+
+<img src="https://imgs.xkcd.com/comics/python.png">
+
+</script></section><section  data-markdown><script type="text/template">
+
+# Python Example
+
+```
+import time
+
+for i in range(2, 15):
+    if num % 2 == 0:
+        print("Found an even number", num)
+    else:
+        print("Found an odd number", num)
+print("All done!")
+```
+
+<aside class="notes"><p>Python uses spaces for marking blocks</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+
+# Pi Pico
+
+- ~$8 computer
+- dual core
+- appears as a USB flash drive
+- online simulator
+- can be programmed in CircuitPython
+    - beginner friendly version with many libraries
+
+</script></section><section  data-markdown><script type="text/template">
+
+# Editors
+
+- Web based editor (must use chrome): https://urfdvw.github.io/CircuitPython-online-IDE/
+- Mu (if you can install it)
+
+
+*Use these if you're working on sound*
+
+
+- Ocenaudio or Audacity to create sound files
+
+</script></section><section  data-markdown><script type="text/template">
+
+# Wokwi Simulator
+
+- example set up to do NeoPixel LEDS: https://wokwi.com/arduino/projects/317983734672392770
+
+
+</script></section><section  data-markdown><script type="text/template">
+
+# Circuit Python References
+
+- https://learn.adafruit.com/welcome-to-circuitpython
+- https://learn.adafruit.com/circuitpython-essentials
+
+
+</script></section><section  data-markdown><script type="text/template">
+
+# Circuit Python References: LEDs
+
+- https://learn.adafruit.com/getting-started-with-raspberry-pi-pico-circuitpython/neopixel-leds
+- https://learn.adafruit.com/circuitpython-led-animations
+
+</script></section><section  data-markdown><script type="text/template">
+
+# Circuit Python References: Sound
+
+- https://learn.adafruit.com/mp3-playback-rp2040/pico-mp3
+    - Note [this known issue with start/end clicks](https://github.com/adafruit/circuitpython/issues/5136)
+- Use Audacity or Ocenaudio to prepare sound files
+
+</script></section><section  data-markdown><script type="text/template">
+
+# Extra References
+
+- https://circuitpython.readthedocs.io/en/latest/docs/index.html
+- https://www.recantha.co.uk/blog/?p=20950
+- https://circuitpython.org/board/raspberry_pi_pico/
+- https://learn.adafruit.com/keep-your-circuitpython-libraries-on-devices-up-to-date-with-circup/usage</script></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
